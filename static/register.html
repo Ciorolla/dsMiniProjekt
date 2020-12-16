@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Miniprojekt</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div class="header">
+
+        <div>
+
+            <a href="/main">main</a>
+            <a href="/register">register</a>
+            <a href="/login">login</a>
+            <a href="/admin">admin</a>
+
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <h2>register<h2>
+
+                <form method="POST" action="/handleRegister" enctype="application/x-wwwform-urlencoded">
+
+                    <input type="text" placeholder="Login" name="login" required>
+
+                    <input type="password" placeholder="Password" name="password" required>
+
+                    <div>
+                        <label>Age:</label>
+                        <select name="age">
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Student:</label>
+                        <input type="checkbox" name="student">
+                    </div>
+
+                    <div>
+                        <label>Gender:</label>
+                        <div>
+                            <div>
+                                <input type="radio" name="gender" value="F" required><label>F</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" value="M" required><label>M</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit">Register</button>
+
+                </form>
+
+
+
+    </div>
+
+</body>
+
+</html>
